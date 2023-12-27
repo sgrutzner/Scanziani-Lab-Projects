@@ -16,6 +16,19 @@ import matplotlib
 # Setting matplotlib parameters
 matplotlib.rcParams.update({'font.size': 22})
 
+plt.style.use('seaborn-paper')
+sns.set_context('notebook', font_scale=1.5)
+
+#export text as 'true text' which can be edited in Adobe Illustrator
+plt.rcParams['pdf.fonttype']=42
+plt.rcParams['ps.fonttype']=42
+
+#select a plot font like Arial or Helvetica or FreeSans
+plt.rc('font', family='serif', serif='Arial, Helvetica, FreeSans')
+#order specifies which fonts to try first
+#######################################################################
+#######################################################################
+
 #PARAMS to alter to fit each animal
 
 #this is in the index of ttls not a time
